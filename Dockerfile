@@ -20,6 +20,7 @@ RUN apt-get update && apt-get -y dist-upgrade
 # -- Setup tomcat7 to run under docker
 RUN apt-get install -y \
   haveged    \
+  rubygems ruby-dev \
   net-tools  \
   supervisor \
   sudo       \
